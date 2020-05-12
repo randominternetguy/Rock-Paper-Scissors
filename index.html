@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div id="main">
+      <div id="inputContainer">
+        <button class="userInput" onclick="pickRock()">Rock</button>
+        <button class="userInput" onclick="pickPaper()">Paper</button>
+        <button class="userInput" onclick="pickScissors()">Scissors</button>
+      </div>
+      <button class="play oldbackground" onclick="play()">Play</button>
+      <p id="roundResult"></p>
+    </div>
+    <div id="scoreboard">
+      <h2>Score</h2>
+      <div id = "scoreContainers">
+        <div id="playerScoreContainer">
+          <h5>Player</h5>
+          <p id="playerScore">0</p>
+        </div>
+        <div id="computerScoreContainer">
+          <h5>Computer</h5>
+          <p id="computerScore">0</p>
+        </div>
+      </div>
+      <h3 id="gameResult"></h3>
+    </div>
+    <script src = "script.js"></script>
+  </body>
+</html>
